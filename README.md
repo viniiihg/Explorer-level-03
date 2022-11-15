@@ -19,7 +19,7 @@ Nesse repositório estão todos os projetos do level 03 do programa explorer da 
 <br>
 
 <p align="center">
-  <img alt="Space Cream" src="./leve-03/github/Preview.jpg" width="100%">
+  <img alt="Space Cream" src="https://i.imgur.com/G1TG1tC.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
