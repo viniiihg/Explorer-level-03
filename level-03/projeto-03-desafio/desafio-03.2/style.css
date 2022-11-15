@@ -1,0 +1,271 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, input, textarea, select, button{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #BFD7E4;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-color: #293241;
+  width: 100%;
+  height: 465px;
+}
+
+.page{
+  padding-top: 107px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header h1{
+  font-family: 'Staatliches';
+  font-size: 36px;
+  line-height: 45px;
+}
+
+header p{
+  height: 46px;
+}
+
+header img{
+  width: 225px;
+  margin: 0 auto 32px;
+}
+
+header legend{
+  width: 750px;
+  height: 135px;
+  margin: auto;
+  padding: 50px 0;
+
+  background: #F67669;
+
+  font-family: 'Staatliches';
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+
+  border-radius: 20px 20px 0 0 ;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #FFFFFF;
+
+  width: 750px;
+  height: 1075px;
+  margin: 0 auto 392px;
+  padding: 30px 64px 64px;
+
+  border-radius: 0px 0px 20px 20px;
+}
+
+fieldset{
+  border: none;
+}
+
+.fieldset-wrapper{
+  margin-bottom: 33px;
+  gap: 16px;
+}
+
+.col-2{
+  display: flex;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+#event-email{
+  width: 100%;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;   
+}
+
+.input-wrapper label{
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+.input-wrapper label span{
+  margin-left: 9px;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #77757e;
+}
+
+.input-wrapper input, select{
+  width: 300px;
+  height: 55px;
+  padding: 0 24px;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 26px;  
+
+  color: #757377;
+}
+
+legend{
+  text-align: center;
+
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+
+  font-family: 'Staatliches';
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #253B51;
+
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.fieldset-wrapper-2{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 33px;
+}
+
+.input-wrapper select{
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.input-wrapper textarea{
+  width: 100%;
+  height: 165px;
+ 
+  padding: 15px 24px;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 26px;  
+
+  color: #757377;
+  
+}
+
+.checkbox-wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  position: relative;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+
+.checkbox-wrapper input{
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  align-items: center;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+
+.fieldset-wrapper-3{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 65px;
+}
+
+.time{
+  display: flex;
+  gap: 10px;
+}
+
+.time input{
+  width: 140px;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+
+  width: 622px;
+  height: 51px;
+
+  background: #F67669;
+  border-radius: 8px;
+  border: none;
+
+  font-family: 'Staatliches';
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #c26257;
+}
+
+input:invalid{
+  border: 1px solid #FF1010;
+}
